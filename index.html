@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Михаил | Уроки дудука онлайн | 30 лет опыта</title>
+    <meta name="description" content="Онлайн-уроки игры на армянском дудуке. Михаил — преподаватель с 30-летним опытом. Обучение народным песням, постановка дыхания, помощь в выборе инструмента. 1500₽/занятие.">
+    <meta name="keywords" content="уроки дудука, обучение дудуку, армянский дудук, дудук онлайн, репетитор дудука">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #fefaf5; color: #2c2418; line-height: 1.5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .header { background: rgba(255, 248, 240, 0.95); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #e8dccc; padding: 16px 0; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+        .logo { font-size: 20px; font-weight: 600; letter-spacing: 1px; color: #b45f2b; }
+        .logo span { font-weight: 400; color: #8b5a2b; }
+        .btn-header { background: #b45f2b; color: white; padding: 10px 24px; border-radius: 40px; text-decoration: none; font-weight: 500; transition: all 0.3s ease; border: none; cursor: pointer; font-size: 14px; }
+        .btn-header:hover { background: #8e471d; transform: scale(1.02); }
+        .hero { padding: 80px 0 60px; background: linear-gradient(135deg, #fefaf5 0%, #f7ede3 100%); }
+        .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+        .hero-title { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 600; line-height: 1.2; color: #3e2a1f; margin-bottom: 20px; }
+        .hero-subtitle { font-size: 18px; color: #5e4b36; margin-bottom: 28px; border-left: 4px solid #b45f2b; padding-left: 20px; }
+        .hero-price { font-size: 32px; font-weight: 700; color: #b45f2b; margin-bottom: 24px; }
+        .hero-price span { font-size: 18px; font-weight: 400; color: #6b4e33; }
+        .btn-primary { background: #b45f2b; color: white; border: none; padding: 16px 40px; font-size: 18px; font-weight: 600; border-radius: 50px; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 12px rgba(180, 95, 43, 0.3); }
+        .btn-primary:hover { background: #8e471d; transform: translateY(-2px); }
+        .hero-image { border-radius: 24px; height: 380px; display: flex; align-items: center; justify-content: center; background-size: cover; background-position: center; box-shadow: 0 20px 30px -12px rgba(0,0,0,0.15); background-color: #e6d5c0; }
+        .section { padding: 70px 0; }
+        .section-dark { background: #f7ede3; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 600; text-align: center; margin-bottom: 48px; color: #3e2a1f; }
+        .about-content { display: grid; grid-template-columns: 1fr 1.5fr; gap: 48px; align-items: start; }
+        .about-text { font-size: 17px; color: #3e2e22; line-height: 1.6; }
+        .about-text p { margin-bottom: 20px; }
+        .badge { display: inline-block; background: #e8dccc; padding: 8px 20px; border-radius: 40px; font-weight: 500; font-size: 14px; margin-bottom: 20px; color: #8b5a2b; }
+        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+        .card { background: white; border-radius: 24px; padding: 32px 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); transition: all 0.3s; text-align: center; border: 1px solid #efe2d2; }
+        .card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+        .card-icon { font-size: 48px; margin-bottom: 20px; }
+        .card-title { font-size: 24px; font-weight: 600; margin-bottom: 16px; color: #b45f2b; }
+        .card-price { font-size: 28px; font-weight: 700; margin: 20px 0 16px; color: #2c2418; }
+        .adv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; text-align: center; }
+        .adv-item h3 { font-size: 48px; font-weight: 700; color: #b45f2b; margin-bottom: 12px; }
+        .adv-item p { font-size: 16px; color: #5e4b36; }
+        .steps { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; margin-top: 24px; }
+        .step { flex: 1; min-width: 180px; background: white; padding: 24px; border-radius: 20px; text-align: center; }
+        .step-number { width: 48px; height: 48px; background: #b45f2b; color: white; border-radius: 60px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; margin: 0 auto 16px; }
+        .form-container { max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 32px; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 20px; }
+        input, textarea { width: 100%; padding: 14px 18px; border: 1px solid #e2d4c8; border-radius: 50px; font-size: 16px; font-family: inherit; background: #fefaf5; }
+        textarea { border-radius: 24px; resize: vertical; }
+        .btn-submit { width: 100%; background: #b45f2b; color: white; border: none; padding: 14px; font-size: 18px; font-weight: 600; border-radius: 50px; cursor: pointer; }
+        .btn-submit:disabled { background: #ccc; cursor: not-allowed; }
+        .footer { background: #2c2418; color: #dcd0c0; padding: 40px 0; text-align: center; }
+        .contact-links { display: flex; justify-content: center; gap: 32px; margin: 24px 0; flex-wrap: wrap; }
+        .contact-links a { color: #e6b17e; text-decoration: none; font-weight: 500; transition: opacity 0.3s; }
+        .contact-links a:hover { opacity: 0.8; }
+        .whatsapp-btn, .telegram-btn { display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: white; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .telegram-btn { background: #26A5E4; }
+        .whatsapp-btn:hover, .telegram-btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
+        .contact-row { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 30px 0 20px; }
+        .for-who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 20px; }
+        .for-who-card { background: white; padding: 30px 20px; border-radius: 24px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .for-who-card:hover { transform: translateY(-5px); }
+        .for-who-icon { font-size: 48px; margin-bottom: 15px; }
+        .for-who-card h3 { font-size: 22px; margin-bottom: 10px; color: #b45f2b; }
+        .counter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center; background: #2c2418; border-radius: 48px; padding: 50px 30px; color: white; }
+        .counter-number { font-size: 48px; font-weight: 800; color: #e6b17e; margin-bottom: 10px; }
+        .counter-label { font-size: 18px; opacity: 0.9; }
+        .form-status { margin-top: 15px; padding: 10px; border-radius: 8px; text-align: center; font-size: 14px; display: none; }
+        .form-status.success { background: #d4edda; color: #155724; display: block; }
+        .form-status.error { background: #f8d7da; color: #721c24; display: block; }
+        @media (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } .hero-title { font-size: 36px; } .about-content { grid-template-columns: 1fr; } .section { padding: 50px 0; } .form-container { padding: 24px; } }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <div class="logo">Дудук<span>•Мастер</span></div>
+        <a href="#" class="btn-header" id="headerBtn">Записаться</a>
+    </div>
+</header>
+
+<main>
+    <!-- ГЛАВНЫЙ ЭКРАН С ВАШИМ ФОТО -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="badge">🔥 30 лет в музыке</div>
+                <h1 class="hero-title">Онлайн-уроки игры на армянском дудуке</h1>
+                <p class="hero-subtitle">Педагог с 30-летним опытом и двумя высшими образованиями. Обучение народным песням, постановка дыхания, помощь в выборе инструмента.</p>
+                <div class="hero-price">1 500 ₽ <span>/ 60 минут</span></div>
+                <button class="btn-primary" id="heroButton">Начать играть →</button>
+            </div>
+            <div class="hero-image" style="background-image: url('https://i.ibb.co/TDvjbpSP/7t-F.jpg'); background-size: cover; background-position: center;">
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК О ПРЕПОДАВАТЕЛЕ -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="hero-image" style="height: 320px; background-image: url('https://i.postimg.cc/9fqLqX9P/portrait.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="about-text">
+                    <div class="badge">Ваш преподаватель</div>
+                    <h2 style="font-family: 'Playfair Display'; font-size: 32px; margin-bottom: 16px;">Здравствуйте, меня зовут Михаил</h2>
+                    <p>Я посвятил дудуку более 30 лет. За плечами — два высших образования (музыкальное и педагогическое), которые позволяют сочетать академический подход с глубоким пониманием народной музыки.</p>
+                    <p>Моя миссия — передать ту самую теплоту и лиричность, ради которой ценят армянский дудук во всем мире. Я бережно работаю с каждым учеником, помогая освоить как классические композиции, так и подлинные народные песни.</p>
+                    <p><strong>🎵 Индивидуальный подход • 🎵 Постановка дыхания • 🎵 Любой уровень</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- МОИ УСЛУГИ -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Мои услуги</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🎵</div>
+                    <h3 class="card-title">Индивидуальные онлайн-занятия</h3>
+                    <p>60 минут по видеосвязи (Zoom, Skype, WhatsApp). Полная обратная связь, постановка дыхания, работа над звуком и репертуаром.</p>
+                    <div class="card-price">1 500 ₽</div>
+                    <button class="btn-primary" style="padding: 10px 24px; font-size: 16px;" onclick="scrollToForm()">Выбрать время</button>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🪕</div>
+                    <h3 class="card-title">Обучение народным песням</h3>
+                    <p>Освоение аутентичного армянского репертуара, мелизмы, импровизация. Играем от души, а не только по нотам.</p>
+                    <div class="card-price">от 1 500 ₽</div>
+                    <button class="btn-primary" style="padding: 10px 24px; font-size: 16px; background: #8b5a2b;" onclick="scrollToForm()">Узнать подробнее</button>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Помощь в выборе инструмента</h3>
+                    <p>Подберу качественный дудук (дерево, трость) под ваш бюджет и уровень. Без переплат и неудачных покупок.</p>
+                    <div class="card-price">Консультация</div>
+                    <button class="btn-primary" style="padding: 10px 24px; font-size: 16px; background: #8b5a2b;" onclick="scrollToForm()">Проконсультироваться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОЧЕМУ ВЫБИРАЮТ МЕНЯ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают меня</h2>
+            <div class="adv-grid">
+                <div class="adv-item"><h3>30 лет</h3><p>опыта преподавания и концертной деятельности</p></div>
+                <div class="adv-item"><h3>2</h3><p>высших музыкальных образования</p></div>
+                <div class="adv-item"><h3>100+</h3><p>учеников по всему миру</p></div>
+                <div class="adv-item"><h3>🎓</h3><p>Обучение народным песням и академической базе</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОМУ ПОДХОДИТ ОБУЧЕНИЕ -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Кому подходит моё обучение</h2>
+            <div class="for-who-grid">
+                <div class="for-who-card"><div class="for-who-icon">🎵</div><h3>Новичкам</h3><p>С нуля до первых мелодий. Постановка дыхания, атака звука, основы. Никакой «воды» — только практика.</p></div>
+                <div class="for-who-card"><div class="for-who-icon">🎶</div><h3>Опытным музыкантам</h3><p>Армянские мелизмы, народная орнаментика, специфические приёмы. Раскрою секреты, которые не найти в учебниках.</p></div>
+                <div class="for-who-card"><div class="for-who-icon">🎤</div><h3>Для души</h3><p>Без заучивания нот, игра по слуху. Главное — получать удовольствие и наполнять свой дом теплым звуком дудука.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЧЕТЧИК -->
+    <section class="section">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item"><div class="counter-number">150+</div><div class="counter-label">учеников обучил</div></div>
+                <div class="counter-item"><div class="counter-number">8</div><div class="counter-label">стран мира</div></div>
+                <div class="counter-item"><div class="counter-number">12 лет</div><div class="counter-label">онлайн-преподавания</div></div>
+                <div class="counter-item"><div class="counter-number">100%</div><div class="counter-label">индивидуальный подход</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАК ПРОХОДИТ ОБУЧЕНИЕ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Как проходит обучение</h2>
+            <div class="steps">
+                <div class="step"><div class="step-number">1</div><h3>Оставляете заявку</h3><p>Я свяжусь с вами в течение 15 минут</p></div>
+                <div class="step"><div class="step-number">2</div><h3>Знакомимся</h3><p>Определяем цели, уровень, отвечаю на вопросы</p></div>
+                <div class="step"><div class="step-number">3</div><h3>Пробное занятие</h3><p>Вы убеждаетесь в комфортном формате</p></div>
+                <div class="step"><div class="step-number">4</div><h3>Регулярные уроки</h3><p>Играете то, что любите, с поддержкой мастера</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ЗАПИСИ -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Запишитесь на пробный урок</h2>
+            <div class="contact-row">
+                <a href="https://wa.me/79184734801?text=Здравствуйте%2C%20Михаил%21%20Хочу%20записаться%20на%20урок%20дудука" class="whatsapp-btn" target="_blank">💬 Написать в WhatsApp</a>
+                <a href="https://t.me/duduk_mikhail" class="telegram-btn" target="_blank">✈️ Написать в Telegram</a>
+            </div>
+            <p style="text-align: center; margin-bottom: 24px; color: #6b4e33;">Или оставьте заявку, я свяжусь сам</p>
+            <div class="form-container">
+                <form id="callbackForm">
+                    <div class="form-group"><input type="text" placeholder="Ваше имя" required id="name"></div>
+                    <div class="form-group"><input type="tel" placeholder="Телефон или Telegram" required id="phone"></div>
+                    <div class="form-group"><textarea rows="2" placeholder="Ваш вопрос / удобное время" id="question"></textarea></div>
+                    <button type="submit" class="btn-submit" id="submitBtn">Записаться на урок — 1 500 ₽</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p style="font-size: 18px; margin-bottom: 16px;">📞 <strong>+7 918 473-48-01</strong></p>
+        <div class="contact-links">
+            <a href="https://wa.me/79184734801?text=Здравствуйте%2C%20Михаил%21%20Хочу%20записаться%20на%20урок%20дудука" target="_blank">WhatsApp</a>
+            <a href="https://t.me/duduk_mikhail" target="_blank">Telegram</a>
+            <a href="#">Instagram (скоро)</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 14px;">Михаил — Уроки игры на дудуке онлайн • 30 лет опыта • Армянский дудук</p>
+        <p style="font-size: 12px; margin-top: 16px;">© 2025 Михаил — Преподаватель дудука</p>
+    </div>
+</footer>
+
+<script>
+    function scrollToForm() { document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }
+    document.getElementById('heroButton')?.addEventListener('click', scrollToForm);
+    document.getElementById('headerBtn')?.addEventListener('click', (e) => { e.preventDefault(); scrollToForm(); });
+    
+    const BOT_TOKEN = "YOUR_BOT_TOKEN";
+    const CHAT_ID = "YOUR_CHAT_ID";
+    const form = document.getElementById('callbackForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const statusDiv = document.getElementById('formStatus');
+    
+    async function sendToTelegram(name, phone, question) {
+        const message = `🪕 *НОВАЯ ЗАЯВКА С САЙТА!*\n\n👤 *Имя:* ${name}\n📞 *Контакт:* ${phone}\n💬 *Вопрос:* ${question || "—"}\n\n⏰ Отправлено: ${new Date().toLocaleString()}`;
+        const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: CHAT_ID, text: message, parse_mode: 'Markdown' })
+            });
+            return response.ok;
+        } catch (error) { return false; }
+    }
+    
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const question = document.getElementById('question').value.trim();
+        if (!name || !phone) {
+            statusDiv.textContent = '❌ Пожалуйста, укажите имя и телефон/Telegram для связи';
+            statusDiv.className = 'form-status error';
+            setTimeout(() => { statusDiv.className = 'form-status'; }, 3000);
+            return;
+        }
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Отправка...';
+        statusDiv.textContent = '⏳ Отправляю заявку...';
+        statusDiv.className = 'form-status';
+        if (BOT_TOKEN === "YOUR_BOT_TOKEN" || CHAT_ID === "YOUR_CHAT_ID") {
+            statusDiv.textContent = '✅ Спасибо! Я свяжусь с вами в ближайшее время. Добро пожаловать в мир дудука!';
+            statusDiv.className = 'form-status success';
+            form.reset();
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Записаться на урок — 1 500 ₽';
+            setTimeout(() => { statusDiv.className = 'form-status'; }, 5000);
+            return;
+        }
+        const success = await sendToTelegram(name, phone, question);
+        if (success) {
+            statusDiv.textContent = '✅ Заявка отправлена! Я свяжусь с вами в ближайшее время.';
+            statusDiv.className = 'form-status success';
+            form.reset();
+        } else {
+            statusDiv.textContent = '❌ Ошибка отправки. Попробуйте позже или напишите напрямую в WhatsApp/Telegram.';
+            statusDiv.className = 'form-status error';
+        }
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Записаться на урок — 1 500 ₽';
+        setTimeout(() => { statusDiv.className = 'form-status'; }, 5000);
+    });
+</script>
+</body>
+</html>
